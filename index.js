@@ -218,27 +218,27 @@ module.exports = [
   },
   {
     opcode: 0x1B,
-    mnemonic: 'Invalid',
-    inputs: [],
-    outputs: [],
-    expression: '',
-    notes: ''
+    mnemonic: 'SHL',
+    inputs: ['shift', 'value'],
+    outputs: ['value << shift'],
+    expression: 'value << shift',
+    notes: '256-bit shift left',
   },
   {
     opcode: 0x1C,
-    mnemonic: 'Invalid',
-    inputs: [],
-    outputs: [],
-    expression: '',
-    notes: ''
+    mnemonic: 'SHR',
+    inputs: ['shift', 'value'],
+    outputs: ['value >> shift'],
+    expression: 'value >> shift',
+    notes: '256-bit shift right',
   },
   {
     opcode: 0x1D,
-    mnemonic: 'Invalid',
-    inputs: [],
-    outputs: [],
-    expression: '',
-    notes: ''
+    mnemonic: 'SAR',
+    inputs: ['shift', 'value'],
+    outputs: ['value >> shift'],
+    expression: 'value >> shift',
+    notes: 'int256 shift right',
   },
   {
     opcode: 0x1E,
@@ -506,11 +506,11 @@ module.exports = [
   },
   {
     opcode: 0x3F,
-    mnemonic: 'Invalid',
-    inputs: [],
-    outputs: [],
-    expression: '',
-    notes: ''
+    mnemonic: 'EXTCODEHASH',
+    inputs: ['addr'],
+    outputs: ['hash'],
+    expression: 'hash = address(addr).exists ? keccak256(address(addr).code) : 0',
+    notes: 'hash of the contract bytecode at addr, see EIP-1052',
   },
   {
     opcode: 0x40,
@@ -1962,11 +1962,11 @@ module.exports = [
   },
   {
     opcode: 0xF5,
-    mnemonic: 'Invalid',
-    inputs: [],
-    outputs: [],
-    expression: '',
-    notes: ''
+    mnemonic: 'CREATE2',
+    inputs: ['value', 'offset', 'length', 'salt'],
+    outputs: ['addr'],
+    expression: 'addr = new memory[offset:offset+length].value(value)',
+    notes: 'creates a child contract with a deterministic address, see EIP-1014',
   },
   {
     opcode: 0xF6,
@@ -2006,7 +2006,7 @@ module.exports = [
     inputs: ['gas', 'addr', 'argsOffset', 'argsLength', 'retOffset', 'retLength'],
     outputs: ['success'],
     expression: 'success, memory[retOffset:retOffset+retLength] = address(addr).staticcall.gas(gas) (memory[argsOffset:argsOffset+argsLength])',
-    notes: '???'
+    notes: 'calls a method in another contract with state changes such as contract creation, event emission, storage modification and contract destruction disallowed, see EIP-214',
   },
   {
     opcode: 0xFB,
