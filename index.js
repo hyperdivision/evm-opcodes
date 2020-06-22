@@ -122,43 +122,43 @@ module.exports = [
   },
   {
     opcode: 0x0C,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x0D,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x0E,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x0F,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x10,
@@ -302,23 +302,23 @@ module.exports = [
   },
   {
     opcode: 0x1E,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x1F,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x20,
@@ -333,153 +333,153 @@ module.exports = [
   },
   {
     opcode: 0x21,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x22,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x23,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x24,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x25,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x26,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x27,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x28,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x29,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x2A,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x2B,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x2C,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x2D,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x2E,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x2F,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x30,
@@ -705,103 +705,103 @@ module.exports = [
   },
   {
     opcode: 0x46,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x47,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x48,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x49,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x4A,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x4B,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x4C,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x4D,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x4E,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x4F,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x50,
@@ -930,43 +930,43 @@ module.exports = [
   },
   {
     opcode: 0x5C,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x5D,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x5E,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x5F,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0x60,
@@ -1665,113 +1665,113 @@ module.exports = [
   },
   {
     opcode: 0xA5,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xA6,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xA7,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xA8,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xA9,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xAA,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xAB,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xAC,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xAD,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xAE,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xAF,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xB0,
@@ -1805,613 +1805,613 @@ module.exports = [
   },
   {
     opcode: 0xB3,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xB4,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xB5,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xB6,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xB7,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xB8,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xB9,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xBA,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xBB,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xBC,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xBD,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xBE,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xBF,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xC0,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xC1,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xC2,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xC3,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xC4,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xC5,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xC6,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xC7,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xC8,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xC9,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xCA,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xCB,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xCC,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xCD,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xCE,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xCF,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xD0,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xD1,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xD2,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xD3,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xD4,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xD5,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xD6,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xD7,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xD8,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xD9,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xDA,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xDB,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xDC,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xDD,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xDE,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xDF,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xE0,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xE1,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xE2,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xE3,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xE4,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xE5,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xE6,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xE7,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xE8,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xE9,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xEA,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xEB,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xEC,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xED,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xEE,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xEF,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xF0,
@@ -2479,43 +2479,43 @@ module.exports = [
   },
   {
     opcode: 0xF6,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xF7,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xF8,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xF9,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xFA,
@@ -2530,23 +2530,23 @@ module.exports = [
   },
   {
     opcode: 0xFB,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xFC,
-    mnemonic: 'Invalid',
+    mnemonic: 'Unassigned',
     inputs: [],
     outputs: [],
     expression: '',
     notes: '',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xFD,
@@ -2561,13 +2561,13 @@ module.exports = [
   },
   {
     opcode: 0xFE,
-    mnemonic: 'Invalid',
+    mnemonic: 'INVALID',
     inputs: [],
     outputs: [],
     expression: '',
-    notes: '',
+    notes: 'Designated invalid instruction',
     byteLength: 1,
-    terminal: false
+    terminal: true
   },
   {
     opcode: 0xFF,
