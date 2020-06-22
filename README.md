@@ -37,6 +37,8 @@ const mnemonic = new Map(evmOpcodes.map(o => [o.mnemonic, o]))
 }
 ```
 
+Information is enriched from [https://ethervm.io/](https://ethervm.io/)
+
 ## Install
 
 ```sh
