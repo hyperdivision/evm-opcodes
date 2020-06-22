@@ -21,12 +21,19 @@ const mnemonic = new Map(evmOpcodes.map(o => [o.mnemonic, o]))
 
 ```
 {
-  opcode: Number,
-  mnemonic: String,
-  inputs: [String...],
-  outputs: [String...],
-  expression: String,
-  notes: String
+  opcode: Number, // Hex Opcode
+  mnemonic: String, // Mnemonic from Yello Paper / EIPs
+  inputs: [String...], // List of stack inputs with human readable names
+  outputs: [String...], // List of stack outputs with human readable names
+  expression: String, // Expression in pseudo code
+  notes: String, // Human readable description of instruction behaviour
+  byteLength: Number, // Instruction length in bytes (PUSH* > 1)
+  terminal: Boolean, // Ends execution or not
+  // Following properties are only present on relevant instructions
+  readsMemory: [Number...], // List of `inputs` indexes affecting reads from memory
+  writesMemory: [Number...], // List of `inputs` indexes affecting writes to memory
+  readsStorage: [Number...], // List of `inputs` indexes affecting reads from storage
+  writesStorage: [Number...] // List of `inputs` indexes affecting writes to storage
 }
 ```
 

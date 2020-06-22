@@ -6,7 +6,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: 'STOP()',
-    notes: 'halts execution of the contract'
+    notes: 'halts execution of the contract',
+    byteLength: 1,
+    terminal: true
   },
   {
     opcode: 0x1,
@@ -14,7 +16,9 @@ module.exports = [
     inputs: ['a', 'b'],
     outputs: ['a + b'],
     expression: 'a + b',
-    notes: '(u)int256 addition modulo 2**256'
+    notes: '(u)int256 addition modulo 2**256',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x2,
@@ -22,7 +26,9 @@ module.exports = [
     inputs: ['a', 'b'],
     outputs: ['a * b'],
     expression: 'a * b',
-    notes: '(u)int256 multiplication modulo 2**256'
+    notes: '(u)int256 multiplication modulo 2**256',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x3,
@@ -30,7 +36,9 @@ module.exports = [
     inputs: ['a', 'b'],
     outputs: ['a - b'],
     expression: 'a - b',
-    notes: '(u)int256 subtraction modulo 2**256'
+    notes: '(u)int256 subtraction modulo 2**256',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x4,
@@ -38,7 +46,9 @@ module.exports = [
     inputs: ['a', 'b'],
     outputs: ['a // b'],
     expression: 'a // b',
-    notes: 'uint256 division'
+    notes: 'uint256 division',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x5,
@@ -46,7 +56,9 @@ module.exports = [
     inputs: ['a', 'b'],
     outputs: ['a // b'],
     expression: 'a // b',
-    notes: 'int256 division'
+    notes: 'int256 division',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x6,
@@ -54,7 +66,9 @@ module.exports = [
     inputs: ['a', 'b'],
     outputs: ['a % b'],
     expression: 'a % b',
-    notes: 'uint256 modulus'
+    notes: 'uint256 modulus',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x7,
@@ -62,7 +76,9 @@ module.exports = [
     inputs: ['a', 'b'],
     outputs: ['a % b'],
     expression: 'a % b',
-    notes: 'int256 modulus'
+    notes: 'int256 modulus',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x8,
@@ -70,7 +86,9 @@ module.exports = [
     inputs: ['a', 'b', 'N'],
     outputs: ['(a + b) % N'],
     expression: '(a + b) % N',
-    notes: '(u)int256 addition modulo N'
+    notes: '(u)int256 addition modulo N',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x9,
@@ -78,7 +96,9 @@ module.exports = [
     inputs: ['a', 'b', 'N'],
     outputs: ['(a * b) % N'],
     expression: '(a * b) % N',
-    notes: '(u)int256 multiplication modulo N'
+    notes: '(u)int256 multiplication modulo N',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x0A,
@@ -86,7 +106,9 @@ module.exports = [
     inputs: ['a', 'b'],
     outputs: ['a ** b'],
     expression: 'a ** b',
-    notes: 'uint256 exponentiation modulo 2**256'
+    notes: 'uint256 exponentiation modulo 2**256',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x0B,
@@ -94,7 +116,9 @@ module.exports = [
     inputs: ['b', 'x'],
     outputs: ['y'],
     expression: 'y = SIGNEXTEND(x, b)',
-    notes: 'sign extends x from (b + 1) * 8 bits to 256 bits.'
+    notes: 'sign extends x from (b + 1) * 8 bits to 256 bits.',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x0C,
@@ -102,7 +126,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x0D,
@@ -110,7 +136,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x0E,
@@ -118,7 +146,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x0F,
@@ -126,7 +156,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x10,
@@ -134,7 +166,9 @@ module.exports = [
     inputs: ['a', 'b'],
     outputs: ['a < b'],
     expression: 'a < b',
-    notes: 'uint256 comparison'
+    notes: 'uint256 comparison',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x11,
@@ -142,7 +176,9 @@ module.exports = [
     inputs: ['a', 'b'],
     outputs: ['a > b'],
     expression: 'a > b',
-    notes: 'uint256 comparison'
+    notes: 'uint256 comparison',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x12,
@@ -150,7 +186,9 @@ module.exports = [
     inputs: ['a', 'b'],
     outputs: ['a < b'],
     expression: 'a < b',
-    notes: 'int256 comparison'
+    notes: 'int256 comparison',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x13,
@@ -158,7 +196,9 @@ module.exports = [
     inputs: ['a', 'b'],
     outputs: ['a > b'],
     expression: 'a > b',
-    notes: 'int256 comparison'
+    notes: 'int256 comparison',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x14,
@@ -166,7 +206,9 @@ module.exports = [
     inputs: ['a', 'b'],
     outputs: ['a == b'],
     expression: 'a == b',
-    notes: '(u)int256 equality'
+    notes: '(u)int256 equality',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x15,
@@ -174,7 +216,9 @@ module.exports = [
     inputs: ['a'],
     outputs: ['a == 0'],
     expression: 'a == 0',
-    notes: '(u)int256 is zero'
+    notes: '(u)int256 is zero',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x16,
@@ -182,7 +226,9 @@ module.exports = [
     inputs: ['a', 'b'],
     outputs: ['a & b'],
     expression: 'a & b',
-    notes: '256-bit bitwise and'
+    notes: '256-bit bitwise and',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x17,
@@ -190,7 +236,9 @@ module.exports = [
     inputs: ['a', 'b'],
     outputs: ['a | b'],
     expression: 'a | b',
-    notes: '256-bit bitwise or'
+    notes: '256-bit bitwise or',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x18,
@@ -198,7 +246,9 @@ module.exports = [
     inputs: ['a', 'b'],
     outputs: ['a ^ b'],
     expression: 'a ^ b',
-    notes: '256-bit bitwise xor'
+    notes: '256-bit bitwise xor',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x19,
@@ -206,7 +256,9 @@ module.exports = [
     inputs: ['a'],
     outputs: ['~a'],
     expression: '~a',
-    notes: '256-bit bitwise not'
+    notes: '256-bit bitwise not',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x1A,
@@ -214,7 +266,9 @@ module.exports = [
     inputs: ['i', 'x'],
     outputs: ['y'],
     expression: 'y = (x >> (i * 8)) & 0xFF',
-    notes: 'ith byte of (u)int256 x'
+    notes: 'ith byte of (u)int256 x',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x1B,
@@ -223,6 +277,8 @@ module.exports = [
     outputs: ['value << shift'],
     expression: 'value << shift',
     notes: '256-bit shift left',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x1C,
@@ -231,6 +287,8 @@ module.exports = [
     outputs: ['value >> shift'],
     expression: 'value >> shift',
     notes: '256-bit shift right',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x1D,
@@ -239,6 +297,8 @@ module.exports = [
     outputs: ['value >> shift'],
     expression: 'value >> shift',
     notes: 'int256 shift right',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x1E,
@@ -246,7 +306,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x1F,
@@ -254,7 +316,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x20,
@@ -262,7 +326,10 @@ module.exports = [
     inputs: ['offset', 'length'],
     outputs: ['hash'],
     expression: 'hash = keccak256(memory[offset:offset+length])',
-    notes: 'keccak256'
+    notes: 'keccak256',
+    readsMemory: [0, 1],
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x21,
@@ -270,7 +337,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x22,
@@ -278,7 +347,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x23,
@@ -286,7 +357,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x24,
@@ -294,7 +367,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x25,
@@ -302,7 +377,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x26,
@@ -310,7 +387,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x27,
@@ -318,7 +397,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x28,
@@ -326,7 +407,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x29,
@@ -334,7 +417,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x2A,
@@ -342,7 +427,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x2B,
@@ -350,7 +437,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x2C,
@@ -358,7 +447,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x2D,
@@ -366,7 +457,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x2E,
@@ -374,7 +467,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x2F,
@@ -382,7 +477,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x30,
@@ -390,7 +487,9 @@ module.exports = [
     inputs: [],
     outputs: ['address(this)'],
     expression: 'address(this)',
-    notes: 'address of the executing contract'
+    notes: 'address of the executing contract',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x31,
@@ -398,7 +497,9 @@ module.exports = [
     inputs: ['addr'],
     outputs: ['address(addr).balance'],
     expression: 'address(addr).balance',
-    notes: 'address balance in wei'
+    notes: 'address balance in wei',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x32,
@@ -406,7 +507,9 @@ module.exports = [
     inputs: [],
     outputs: ['tx.origin'],
     expression: 'tx.origin',
-    notes: 'transaction origin address'
+    notes: 'transaction origin address',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x33,
@@ -414,7 +517,9 @@ module.exports = [
     inputs: [],
     outputs: ['msg.caller'],
     expression: 'msg.caller',
-    notes: 'message caller address'
+    notes: 'message caller address',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x34,
@@ -422,7 +527,9 @@ module.exports = [
     inputs: [],
     outputs: ['msg.value'],
     expression: 'msg.value',
-    notes: 'message funds in wei'
+    notes: 'message funds in wei',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x35,
@@ -430,7 +537,9 @@ module.exports = [
     inputs: ['i'],
     outputs: ['msg.data[i:i+32]'],
     expression: 'msg.data[i:i+32]',
-    notes: 'reads a (u)int256 from message data'
+    notes: 'reads a (u)int256 from message data',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x36,
@@ -438,7 +547,9 @@ module.exports = [
     inputs: [],
     outputs: ['msg.data.size'],
     expression: 'msg.data.size',
-    notes: 'message data length in bytes'
+    notes: 'message data length in bytes',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x37,
@@ -446,7 +557,10 @@ module.exports = [
     inputs: ['destOffset', 'offset', 'length'],
     outputs: [],
     expression: 'memory[destOffset:destOffset+length] = msg.data[offset:offset+length]',
-    notes: 'copy message data'
+    notes: 'copy message data',
+    readsMemory: [1, 2],
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x38,
@@ -454,7 +568,9 @@ module.exports = [
     inputs: [],
     outputs: ['address(this).code.size'],
     expression: 'address(this).code.size',
-    notes: "length of the executing contract's code in bytes"
+    notes: "length of the executing contract's code in bytes",
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x39,
@@ -462,7 +578,10 @@ module.exports = [
     inputs: ['destOffset', 'offset', 'length'],
     outputs: [],
     expression: 'memory[destOffset:destOffset+length] = address(this).code[offset:offset+length]',
-    notes: "copy executing contract's bytecode"
+    notes: "copy executing contract's bytecode",
+    readsMemory: [1, 2],
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x3A,
@@ -470,7 +589,9 @@ module.exports = [
     inputs: [],
     outputs: ['tx.gasprice'],
     expression: 'tx.gasprice',
-    notes: 'gas price of the executing transaction, in wei per unit of gas'
+    notes: 'gas price of the executing transaction, in wei per unit of gas',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x3B,
@@ -478,7 +599,9 @@ module.exports = [
     inputs: ['addr'],
     outputs: ['address(addr).code.size'],
     expression: 'address(addr).code.size',
-    notes: 'length of the contract bytecode at addr, in bytes'
+    notes: 'length of the contract bytecode at addr, in bytes',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x3C,
@@ -486,7 +609,9 @@ module.exports = [
     inputs: ['addr', 'destOffset', 'offset', 'length'],
     outputs: [],
     expression: 'memory[destOffset:destOffset+length] = address(addr).code[offset:offset+length]',
-    notes: "copy contract's bytecode"
+    notes: "copy contract's bytecode",
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x3D,
@@ -494,7 +619,9 @@ module.exports = [
     inputs: [],
     outputs: ['size'],
     expression: 'size = RETURNDATASIZE()',
-    notes: 'the size of the returned data from the last external call, in bytes'
+    notes: 'the size of the returned data from the last external call, in bytes',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x3E,
@@ -502,7 +629,9 @@ module.exports = [
     inputs: ['destOffset', 'offset', 'length'],
     outputs: [],
     expression: 'memory[destOffset:destOffset+length] = RETURNDATA[offset:offset+length]',
-    notes: 'copy returned data'
+    notes: 'copy returned data',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x3F,
@@ -511,6 +640,8 @@ module.exports = [
     outputs: ['hash'],
     expression: 'hash = address(addr).exists ? keccak256(address(addr).code) : 0',
     notes: 'hash of the contract bytecode at addr, see EIP-1052',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x40,
@@ -518,7 +649,9 @@ module.exports = [
     inputs: ['blockNumber'],
     outputs: ['hash'],
     expression: 'hash = block.blockHash(blockNumber)',
-    notes: 'hash of the specific block, only valid for the 256 most recent blocks, excluding the current one'
+    notes: 'hash of the specific block, only valid for the 256 most recent blocks, excluding the current one',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x41,
@@ -526,7 +659,9 @@ module.exports = [
     inputs: [],
     outputs: ['block.coinbase'],
     expression: 'block.coinbase',
-    notes: "address of the current block's miner"
+    notes: "address of the current block's miner",
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x42,
@@ -534,7 +669,9 @@ module.exports = [
     inputs: [],
     outputs: ['block.timestamp'],
     expression: 'block.timestamp',
-    notes: "current block's Unix timestamp in seconds"
+    notes: "current block's Unix timestamp in seconds",
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x43,
@@ -542,7 +679,9 @@ module.exports = [
     inputs: [],
     outputs: ['block.number'],
     expression: 'block.number',
-    notes: "current block's number"
+    notes: "current block's number",
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x44,
@@ -550,7 +689,9 @@ module.exports = [
     inputs: [],
     outputs: ['block.difficulty'],
     expression: 'block.difficulty',
-    notes: "current block's difficulty"
+    notes: "current block's difficulty",
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x45,
@@ -558,7 +699,9 @@ module.exports = [
     inputs: [],
     outputs: ['block.gaslimit'],
     expression: 'block.gaslimit',
-    notes: "current block's gas limit"
+    notes: "current block's gas limit",
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x46,
@@ -566,7 +709,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x47,
@@ -574,7 +719,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x48,
@@ -582,7 +729,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x49,
@@ -590,7 +739,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x4A,
@@ -598,7 +749,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x4B,
@@ -606,7 +759,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x4C,
@@ -614,7 +769,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x4D,
@@ -622,7 +779,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x4E,
@@ -630,7 +789,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x4F,
@@ -638,7 +799,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x50,
@@ -646,7 +809,9 @@ module.exports = [
     inputs: ['_'],
     outputs: [],
     expression: 'POP()',
-    notes: 'pops a (u)int256 off the stack and discards it'
+    notes: 'pops a (u)int256 off the stack and discards it',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x51,
@@ -654,7 +819,10 @@ module.exports = [
     inputs: ['offset'],
     outputs: ['value'],
     expression: 'value = memory[offset:offset+32]',
-    notes: 'reads a (u)int256 from memory'
+    notes: 'reads a (u)int256 from memory',
+    readsMemory: [0],
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x52,
@@ -662,7 +830,10 @@ module.exports = [
     inputs: ['offset', 'value'],
     outputs: [],
     expression: 'memory[offset:offset+32] = value',
-    notes: 'writes a (u)int256 to memory'
+    notes: 'writes a (u)int256 to memory',
+    writesMemory: [0, 1],
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x53,
@@ -670,7 +841,10 @@ module.exports = [
     inputs: ['offset', 'value'],
     outputs: [],
     expression: 'memory[offset] = value & 0xFF',
-    notes: 'writes a uint8 to memory'
+    notes: 'writes a uint8 to memory',
+    writesMemory: [0, 1],
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x54,
@@ -678,7 +852,10 @@ module.exports = [
     inputs: ['key'],
     outputs: ['value'],
     expression: 'value = storage[key]',
-    notes: 'reads a (u)int256 from storage'
+    notes: 'reads a (u)int256 from storage',
+    readsStorage: [0],
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x55,
@@ -686,7 +863,10 @@ module.exports = [
     inputs: ['key', 'value'],
     outputs: [],
     expression: 'storage[key] = value',
-    notes: 'writes a (u)int256 to storage'
+    notes: 'writes a (u)int256 to storage',
+    writeStorage: [0],
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x56,
@@ -694,7 +874,9 @@ module.exports = [
     inputs: ['destination'],
     outputs: [],
     expression: '$pc = destination',
-    notes: 'unconditional jump'
+    notes: 'unconditional jump',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x57,
@@ -702,7 +884,9 @@ module.exports = [
     inputs: ['destination', 'condition'],
     outputs: [],
     expression: '$pc = cond ? destination : $pc + 1',
-    notes: 'conditional jump if condition is truthy'
+    notes: 'conditional jump if condition is truthy',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x58,
@@ -710,7 +894,9 @@ module.exports = [
     inputs: [],
     outputs: ['$pc'],
     expression: '$pc',
-    notes: 'program counter'
+    notes: 'program counter',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x59,
@@ -718,7 +904,9 @@ module.exports = [
     inputs: [],
     outputs: ['size'],
     expression: 'size = MSIZE()',
-    notes: 'size of memory for this contract execution, in bytes'
+    notes: 'size of memory for this contract execution, in bytes',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x5A,
@@ -726,7 +914,9 @@ module.exports = [
     inputs: [],
     outputs: ['gasRemaining'],
     expression: 'gasRemaining = GAS()',
-    notes: 'remaining gas'
+    notes: 'remaining gas',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x5B,
@@ -734,7 +924,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: 'metadata to annotate possible jump destinations'
+    notes: 'metadata to annotate possible jump destinations',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x5C,
@@ -742,7 +934,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x5D,
@@ -750,7 +944,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x5E,
@@ -758,7 +954,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x5F,
@@ -766,7 +964,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x60,
@@ -774,7 +974,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint8'],
     expression: 'PUSH(uint8)',
-    notes: 'pushes a 1-byte value onto the stack'
+    notes: 'pushes a 1-byte value onto the stack',
+    byteLength: 2,
+    terminal: false
   },
   {
     opcode: 0x61,
@@ -782,7 +984,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint16'],
     expression: 'PUSH(uint16)',
-    notes: 'pushes a 2-byte value onto the stack'
+    notes: 'pushes a 2-byte value onto the stack',
+    byteLength: 3,
+    terminal: false
   },
   {
     opcode: 0x62,
@@ -790,7 +994,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint24'],
     expression: 'PUSH(uint24)',
-    notes: 'pushes a 3-byte value onto the stack'
+    notes: 'pushes a 3-byte value onto the stack',
+    byteLength: 4,
+    terminal: false
   },
   {
     opcode: 0x63,
@@ -798,7 +1004,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint32'],
     expression: 'PUSH(uint32)',
-    notes: 'pushes a 4-byte value onto the stack'
+    notes: 'pushes a 4-byte value onto the stack',
+    byteLength: 5,
+    terminal: false
   },
   {
     opcode: 0x64,
@@ -806,7 +1014,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint40'],
     expression: 'PUSH(uint40)',
-    notes: 'pushes a 5-byte value onto the stack'
+    notes: 'pushes a 5-byte value onto the stack',
+    byteLength: 6,
+    terminal: false
   },
   {
     opcode: 0x65,
@@ -814,7 +1024,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint48'],
     expression: 'PUSH(uint48)',
-    notes: 'pushes a 6-byte value onto the stack'
+    notes: 'pushes a 6-byte value onto the stack',
+    byteLength: 7,
+    terminal: false
   },
   {
     opcode: 0x66,
@@ -822,7 +1034,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint56'],
     expression: 'PUSH(uint56)',
-    notes: 'pushes a 7-byte value onto the stack'
+    notes: 'pushes a 7-byte value onto the stack',
+    byteLength: 8,
+    terminal: false
   },
   {
     opcode: 0x67,
@@ -830,7 +1044,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint64'],
     expression: 'PUSH(uint64)',
-    notes: 'pushes a 8-byte value onto the stack'
+    notes: 'pushes a 8-byte value onto the stack',
+    byteLength: 9,
+    terminal: false
   },
   {
     opcode: 0x68,
@@ -838,7 +1054,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint72'],
     expression: 'PUSH(uint72)',
-    notes: 'pushes a 9-byte value onto the stack'
+    notes: 'pushes a 9-byte value onto the stack',
+    byteLength: 10,
+    terminal: false
   },
   {
     opcode: 0x69,
@@ -846,7 +1064,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint80'],
     expression: 'PUSH(uint80)',
-    notes: 'pushes a 10-byte value onto the stack'
+    notes: 'pushes a 10-byte value onto the stack',
+    byteLength: 11,
+    terminal: false
   },
   {
     opcode: 0x6A,
@@ -854,7 +1074,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint88'],
     expression: 'PUSH(uint88)',
-    notes: 'pushes a 11-byte value onto the stack'
+    notes: 'pushes a 11-byte value onto the stack',
+    byteLength: 12,
+    terminal: false
   },
   {
     opcode: 0x6B,
@@ -862,7 +1084,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint96'],
     expression: 'PUSH(uint96)',
-    notes: 'pushes a 12-byte value onto the stack'
+    notes: 'pushes a 12-byte value onto the stack',
+    byteLength: 13,
+    terminal: false
   },
   {
     opcode: 0x6C,
@@ -870,7 +1094,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint104'],
     expression: 'PUSH(uint104)',
-    notes: 'pushes a 13-byte value onto the stack'
+    notes: 'pushes a 13-byte value onto the stack',
+    byteLength: 14,
+    terminal: false
   },
   {
     opcode: 0x6D,
@@ -878,7 +1104,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint112'],
     expression: 'PUSH(uint112)',
-    notes: 'pushes a 14-byte value onto the stack'
+    notes: 'pushes a 14-byte value onto the stack',
+    byteLength: 15,
+    terminal: false
   },
   {
     opcode: 0x6E,
@@ -886,7 +1114,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint120'],
     expression: 'PUSH(uint120)',
-    notes: 'pushes a 15-byte value onto the stack'
+    notes: 'pushes a 15-byte value onto the stack',
+    byteLength: 16,
+    terminal: false
   },
   {
     opcode: 0x6F,
@@ -894,7 +1124,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint128'],
     expression: 'PUSH(uint128)',
-    notes: 'pushes a 16-byte value onto the stack'
+    notes: 'pushes a 16-byte value onto the stack',
+    byteLength: 17,
+    terminal: false
   },
   {
     opcode: 0x70,
@@ -902,7 +1134,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint136'],
     expression: 'PUSH(uint136)',
-    notes: 'pushes a 17-byte value onto the stack'
+    notes: 'pushes a 17-byte value onto the stack',
+    byteLength: 18,
+    terminal: false
   },
   {
     opcode: 0x71,
@@ -910,7 +1144,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint144'],
     expression: 'PUSH(uint144)',
-    notes: 'pushes a 18-byte value onto the stack'
+    notes: 'pushes a 18-byte value onto the stack',
+    byteLength: 19,
+    terminal: false
   },
   {
     opcode: 0x72,
@@ -918,7 +1154,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint152'],
     expression: 'PUSH(uint152)',
-    notes: 'pushes a 19-byte value onto the stack'
+    notes: 'pushes a 19-byte value onto the stack',
+    byteLength: 20,
+    terminal: false
   },
   {
     opcode: 0x73,
@@ -926,7 +1164,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint160'],
     expression: 'PUSH(uint160)',
-    notes: 'pushes a 20-byte value onto the stack'
+    notes: 'pushes a 20-byte value onto the stack',
+    byteLength: 21,
+    terminal: false
   },
   {
     opcode: 0x74,
@@ -934,7 +1174,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint168'],
     expression: 'PUSH(uint168)',
-    notes: 'pushes a 21-byte value onto the stack'
+    notes: 'pushes a 21-byte value onto the stack',
+    byteLength: 22,
+    terminal: false
   },
   {
     opcode: 0x75,
@@ -942,7 +1184,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint176'],
     expression: 'PUSH(uint176)',
-    notes: 'pushes a 22-byte value onto the stack'
+    notes: 'pushes a 22-byte value onto the stack',
+    byteLength: 23,
+    terminal: false
   },
   {
     opcode: 0x76,
@@ -950,7 +1194,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint184'],
     expression: 'PUSH(uint184)',
-    notes: 'pushes a 23-byte value onto the stack'
+    notes: 'pushes a 23-byte value onto the stack',
+    byteLength: 24,
+    terminal: false
   },
   {
     opcode: 0x77,
@@ -958,7 +1204,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint192'],
     expression: 'PUSH(uint192)',
-    notes: 'pushes a 24-byte value onto the stack'
+    notes: 'pushes a 24-byte value onto the stack',
+    byteLength: 25,
+    terminal: false
   },
   {
     opcode: 0x78,
@@ -966,7 +1214,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint200'],
     expression: 'PUSH(uint200)',
-    notes: 'pushes a 25-byte value onto the stack'
+    notes: 'pushes a 25-byte value onto the stack',
+    byteLength: 26,
+    terminal: false
   },
   {
     opcode: 0x79,
@@ -974,7 +1224,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint208'],
     expression: 'PUSH(uint208)',
-    notes: 'pushes a 26-byte value onto the stack'
+    notes: 'pushes a 26-byte value onto the stack',
+    byteLength: 27,
+    terminal: false
   },
   {
     opcode: 0x7A,
@@ -982,7 +1234,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint216'],
     expression: 'PUSH(uint216)',
-    notes: 'pushes a 27-byte value onto the stack'
+    notes: 'pushes a 27-byte value onto the stack',
+    byteLength: 28,
+    terminal: false
   },
   {
     opcode: 0x7B,
@@ -990,7 +1244,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint224'],
     expression: 'PUSH(uint224)',
-    notes: 'pushes a 28-byte value onto the stack'
+    notes: 'pushes a 28-byte value onto the stack',
+    byteLength: 29,
+    terminal: false
   },
   {
     opcode: 0x7C,
@@ -998,7 +1254,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint232'],
     expression: 'PUSH(uint232)',
-    notes: 'pushes a 29-byte value onto the stack'
+    notes: 'pushes a 29-byte value onto the stack',
+    byteLength: 30,
+    terminal: false
   },
   {
     opcode: 0x7D,
@@ -1006,7 +1264,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint240'],
     expression: 'PUSH(uint240)',
-    notes: 'pushes a 30-byte value onto the stack'
+    notes: 'pushes a 30-byte value onto the stack',
+    byteLength: 31,
+    terminal: false
   },
   {
     opcode: 0x7E,
@@ -1014,7 +1274,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint248'],
     expression: 'PUSH(uint248)',
-    notes: 'pushes a 31-byte value onto the stack'
+    notes: 'pushes a 31-byte value onto the stack',
+    byteLength: 32,
+    terminal: false
   },
   {
     opcode: 0x7F,
@@ -1022,7 +1284,9 @@ module.exports = [
     inputs: [],
     outputs: ['uint256'],
     expression: 'PUSH(uint256)',
-    notes: 'pushes a 32-byte value onto the stack'
+    notes: 'pushes a 32-byte value onto the stack',
+    byteLength: 33,
+    terminal: false
   },
   {
     opcode: 0x80,
@@ -1030,7 +1294,9 @@ module.exports = [
     inputs: ['value'],
     outputs: ['value', 'value'],
     expression: 'PUSH(value)',
-    notes: 'clones the last value on the stack'
+    notes: 'clones the last value on the stack',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x81,
@@ -1038,7 +1304,9 @@ module.exports = [
     inputs: ['_', 'value'],
     outputs: ['value', '_', 'value'],
     expression: 'PUSH(value)',
-    notes: 'clones the 2nd last value on the stack'
+    notes: 'clones the 2nd last value on the stack',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x82,
@@ -1046,7 +1314,9 @@ module.exports = [
     inputs: ['_', '_', 'value'],
     outputs: ['value', '_', '_', 'value'],
     expression: 'PUSH(value)',
-    notes: 'clones the 3rd last value on the stack'
+    notes: 'clones the 3rd last value on the stack',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x83,
@@ -1054,7 +1324,9 @@ module.exports = [
     inputs: ['_', '_', '_', 'value'],
     outputs: ['value', '_', '_', '_', 'value'],
     expression: 'PUSH(value)',
-    notes: 'clones the 4th last value on the stack'
+    notes: 'clones the 4th last value on the stack',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x84,
@@ -1062,7 +1334,9 @@ module.exports = [
     inputs: ['_', '_', '_', '_', 'value'],
     outputs: ['value', '_', '_', '_', '_', 'value'],
     expression: 'PUSH(value)',
-    notes: 'clones the 5th last value on the stack'
+    notes: 'clones the 5th last value on the stack',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x85,
@@ -1070,7 +1344,9 @@ module.exports = [
     inputs: ['_', '_', '_', '_', '_', 'value'],
     outputs: ['value', '_', '_', '_', '_', '_', 'value'],
     expression: 'PUSH(value)',
-    notes: 'clones the 6th last value on the stack'
+    notes: 'clones the 6th last value on the stack',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x86,
@@ -1078,7 +1354,9 @@ module.exports = [
     inputs: ['_', '_', '_', '_', '_', '_', 'value'],
     outputs: ['value', '_', '_', '_', '_', '_', '_', 'value'],
     expression: 'PUSH(value)',
-    notes: 'clones the 7th last value on the stack'
+    notes: 'clones the 7th last value on the stack',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x87,
@@ -1086,7 +1364,9 @@ module.exports = [
     inputs: ['_', '_', '_', '_', '_', '_', '_', 'value'],
     outputs: ['value', '_', '_', '_', '_', '_', '_', '_', 'value'],
     expression: 'PUSH(value)',
-    notes: 'clones the 8th last value on the stack'
+    notes: 'clones the 8th last value on the stack',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x88,
@@ -1094,7 +1374,9 @@ module.exports = [
     inputs: ['_', '_', '_', '_', '_', '_', '_', '_', 'value'],
     outputs: ['value', '_', '_', '_', '_', '_', '_', '_', '_', 'value'],
     expression: 'PUSH(value)',
-    notes: 'clones the 9th last value on the stack'
+    notes: 'clones the 9th last value on the stack',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x89,
@@ -1102,7 +1384,9 @@ module.exports = [
     inputs: ['_', '_', '_', '_', '_', '_', '_', '_', '_', 'value'],
     outputs: ['value', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'value'],
     expression: 'PUSH(value)',
-    notes: 'clones the 10th last value on the stack'
+    notes: 'clones the 10th last value on the stack',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x8A,
@@ -1110,7 +1394,9 @@ module.exports = [
     inputs: ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'value'],
     outputs: ['value', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'value'],
     expression: 'PUSH(value)',
-    notes: 'clones the 11th last value on the stack'
+    notes: 'clones the 11th last value on the stack',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x8B,
@@ -1118,7 +1404,9 @@ module.exports = [
     inputs: ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'value'],
     outputs: ['value', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'value'],
     expression: 'PUSH(value)',
-    notes: 'clones the 12th last value on the stack'
+    notes: 'clones the 12th last value on the stack',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x8C,
@@ -1126,7 +1414,9 @@ module.exports = [
     inputs: ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'value'],
     outputs: ['value', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'value'],
     expression: 'PUSH(value)',
-    notes: 'clones the 13th last value on the stack'
+    notes: 'clones the 13th last value on the stack',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x8D,
@@ -1134,7 +1424,9 @@ module.exports = [
     inputs: ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'value'],
     outputs: ['value', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'value'],
     expression: 'PUSH(value)',
-    notes: 'clones the 14th last value on the stack'
+    notes: 'clones the 14th last value on the stack',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x8E,
@@ -1142,7 +1434,9 @@ module.exports = [
     inputs: ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'value'],
     outputs: ['value', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'value'],
     expression: 'PUSH(value)',
-    notes: 'clones the 15th last value on the stack'
+    notes: 'clones the 15th last value on the stack',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x8F,
@@ -1150,7 +1444,9 @@ module.exports = [
     inputs: ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'value'],
     outputs: ['value', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'value'],
     expression: 'PUSH(value)',
-    notes: 'clones the 16th last value on the stack'
+    notes: 'clones the 16th last value on the stack',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x90,
@@ -1158,7 +1454,9 @@ module.exports = [
     inputs: ['a', 'b'],
     outputs: ['b', 'a'],
     expression: 'a, b = b, a',
-    notes: 'swaps the last two values on the stack'
+    notes: 'swaps the last two values on the stack',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x91,
@@ -1166,7 +1464,9 @@ module.exports = [
     inputs: ['a', '_', 'b'],
     outputs: ['b', '_', 'a'],
     expression: 'a, b = b, a',
-    notes: 'swaps the top of the stack with the 3rd last element'
+    notes: 'swaps the top of the stack with the 3rd last element',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x92,
@@ -1174,7 +1474,9 @@ module.exports = [
     inputs: ['a', '_', '_', 'b'],
     outputs: ['b', '_', '_', 'a'],
     expression: 'a, b = b, a',
-    notes: 'swaps the top of the stack with the 4th last element'
+    notes: 'swaps the top of the stack with the 4th last element',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x93,
@@ -1182,7 +1484,9 @@ module.exports = [
     inputs: ['a', '_', '_', '_', 'b'],
     outputs: ['b', '_', '_', '_', 'a'],
     expression: 'a, b = b, a',
-    notes: 'swaps the top of the stack with the 5th last element'
+    notes: 'swaps the top of the stack with the 5th last element',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x94,
@@ -1190,7 +1494,9 @@ module.exports = [
     inputs: ['a', '_', '_', '_', '_', 'b'],
     outputs: ['b', '_', '_', '_', '_', 'a'],
     expression: 'a, b = b, a',
-    notes: 'swaps the top of the stack with the 6th last element'
+    notes: 'swaps the top of the stack with the 6th last element',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x95,
@@ -1198,7 +1504,9 @@ module.exports = [
     inputs: ['a', '_', '_', '_', '_', '_', 'b'],
     outputs: ['b', '_', '_', '_', '_', '_', 'a'],
     expression: 'a, b = b, a',
-    notes: 'swaps the top of the stack with the 7th last element'
+    notes: 'swaps the top of the stack with the 7th last element',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x96,
@@ -1206,7 +1514,9 @@ module.exports = [
     inputs: ['a', '_', '_', '_', '_', '_', '_', 'b'],
     outputs: ['b', '_', '_', '_', '_', '_', '_', 'a'],
     expression: 'a, b = b, a',
-    notes: 'swaps the top of the stack with the 8th last element'
+    notes: 'swaps the top of the stack with the 8th last element',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x97,
@@ -1214,7 +1524,9 @@ module.exports = [
     inputs: ['a', '_', '_', '_', '_', '_', '_', '_', 'b'],
     outputs: ['b', '_', '_', '_', '_', '_', '_', '_', 'a'],
     expression: 'a, b = b, a',
-    notes: 'swaps the top of the stack with the 9th last element'
+    notes: 'swaps the top of the stack with the 9th last element',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x98,
@@ -1222,7 +1534,9 @@ module.exports = [
     inputs: ['a', '_', '_', '_', '_', '_', '_', '_', '_', 'b'],
     outputs: ['b', '_', '_', '_', '_', '_', '_', '_', '_', 'a'],
     expression: 'a, b = b, a',
-    notes: 'swaps the top of the stack with the 10th last element'
+    notes: 'swaps the top of the stack with the 10th last element',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x99,
@@ -1230,7 +1544,9 @@ module.exports = [
     inputs: ['a', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'b'],
     outputs: ['b', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'a'],
     expression: 'a, b = b, a',
-    notes: 'swaps the top of the stack with the 11th last element'
+    notes: 'swaps the top of the stack with the 11th last element',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x9A,
@@ -1238,7 +1554,9 @@ module.exports = [
     inputs: ['a', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'b'],
     outputs: ['b', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'a'],
     expression: 'a, b = b, a',
-    notes: 'swaps the top of the stack with the 12th last element'
+    notes: 'swaps the top of the stack with the 12th last element',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x9B,
@@ -1246,7 +1564,9 @@ module.exports = [
     inputs: ['a', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'b'],
     outputs: ['b', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'a'],
     expression: 'a, b = b, a',
-    notes: 'swaps the top of the stack with the 13th last element'
+    notes: 'swaps the top of the stack with the 13th last element',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x9C,
@@ -1254,7 +1574,9 @@ module.exports = [
     inputs: ['a', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'b'],
     outputs: ['b', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'a'],
     expression: 'a, b = b, a',
-    notes: 'swaps the top of the stack with the 14th last element'
+    notes: 'swaps the top of the stack with the 14th last element',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x9D,
@@ -1262,7 +1584,9 @@ module.exports = [
     inputs: ['a', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'b'],
     outputs: ['b', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'a'],
     expression: 'a, b = b, a',
-    notes: 'swaps the top of the stack with the 15th last element'
+    notes: 'swaps the top of the stack with the 15th last element',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x9E,
@@ -1270,7 +1594,9 @@ module.exports = [
     inputs: ['a', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'b'],
     outputs: ['b', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'a'],
     expression: 'a, b = b, a',
-    notes: 'swaps the top of the stack with the 16th last element'
+    notes: 'swaps the top of the stack with the 16th last element',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0x9F,
@@ -1278,7 +1604,9 @@ module.exports = [
     inputs: ['a', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'b'],
     outputs: ['b', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', 'a'],
     expression: 'a, b = b, a',
-    notes: 'swaps the top of the stack with the 17th last element'
+    notes: 'swaps the top of the stack with the 17th last element',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xA0,
@@ -1286,7 +1614,10 @@ module.exports = [
     inputs: ['offset', 'length'],
     outputs: [],
     expression: 'LOG0(memory[offset:offset+length])',
-    notes: 'fires an event'
+    notes: 'fires an event',
+    readsMemory: [0, 1],
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xA1,
@@ -1294,7 +1625,10 @@ module.exports = [
     inputs: ['offset', 'length', 'topic0'],
     outputs: [],
     expression: 'LOG1(memory[offset:offset+length], topic0)',
-    notes: 'fires an event'
+    notes: 'fires an event',
+    readsMemory: [0, 1],
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xA2,
@@ -1302,7 +1636,10 @@ module.exports = [
     inputs: ['offset', 'length', 'topic0', 'topic1'],
     outputs: [],
     expression: 'LOG2(memory[offset:offset+length], topic0, topic1)',
-    notes: 'fires an event'
+    notes: 'fires an event',
+    readsMemory: [0, 1],
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xA3,
@@ -1310,7 +1647,10 @@ module.exports = [
     inputs: ['offset', 'length', 'topic0', 'topic1', 'topic2'],
     outputs: [],
     expression: 'LOG3(memory[offset:offset+length], topic0, topic1, topic2)',
-    notes: 'fires an event'
+    notes: 'fires an event',
+    readsMemory: [0, 1],
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xA4,
@@ -1318,7 +1658,10 @@ module.exports = [
     inputs: ['offset', 'length', 'topic0', 'topic1', 'topic2', 'topic3'],
     outputs: [],
     expression: 'LOG4(memory[offset:offset+length], topic0, topic1, topic2, topic3)',
-    notes: 'fires an event'
+    notes: 'fires an event',
+    readsMemory: [0, 1],
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xA5,
@@ -1326,7 +1669,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xA6,
@@ -1334,7 +1679,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xA7,
@@ -1342,7 +1689,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xA8,
@@ -1350,7 +1699,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xA9,
@@ -1358,7 +1709,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xAA,
@@ -1366,7 +1719,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xAB,
@@ -1374,7 +1729,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xAC,
@@ -1382,7 +1739,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xAD,
@@ -1390,7 +1749,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xAE,
@@ -1398,7 +1759,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xAF,
@@ -1406,7 +1769,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xB0,
@@ -1414,7 +1779,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '???',
-    notes: '???'
+    notes: '???',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xB1,
@@ -1422,7 +1789,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '???',
-    notes: '???'
+    notes: '???',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xB2,
@@ -1430,7 +1799,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '???',
-    notes: '???'
+    notes: '???',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xB3,
@@ -1438,7 +1809,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xB4,
@@ -1446,7 +1819,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xB5,
@@ -1454,7 +1829,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xB6,
@@ -1462,7 +1839,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xB7,
@@ -1470,7 +1849,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xB8,
@@ -1478,7 +1859,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xB9,
@@ -1486,7 +1869,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xBA,
@@ -1494,7 +1879,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xBB,
@@ -1502,7 +1889,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xBC,
@@ -1510,7 +1899,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xBD,
@@ -1518,7 +1909,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xBE,
@@ -1526,7 +1919,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xBF,
@@ -1534,7 +1929,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xC0,
@@ -1542,7 +1939,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xC1,
@@ -1550,7 +1949,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xC2,
@@ -1558,7 +1959,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xC3,
@@ -1566,7 +1969,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xC4,
@@ -1574,7 +1979,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xC5,
@@ -1582,7 +1989,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xC6,
@@ -1590,7 +1999,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xC7,
@@ -1598,7 +2009,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xC8,
@@ -1606,7 +2019,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xC9,
@@ -1614,7 +2029,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xCA,
@@ -1622,7 +2039,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xCB,
@@ -1630,7 +2049,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xCC,
@@ -1638,7 +2059,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xCD,
@@ -1646,7 +2069,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xCE,
@@ -1654,7 +2079,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xCF,
@@ -1662,7 +2089,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xD0,
@@ -1670,7 +2099,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xD1,
@@ -1678,7 +2109,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xD2,
@@ -1686,7 +2119,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xD3,
@@ -1694,7 +2129,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xD4,
@@ -1702,7 +2139,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xD5,
@@ -1710,7 +2149,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xD6,
@@ -1718,7 +2159,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xD7,
@@ -1726,7 +2169,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xD8,
@@ -1734,7 +2179,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xD9,
@@ -1742,7 +2189,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xDA,
@@ -1750,7 +2199,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xDB,
@@ -1758,7 +2209,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xDC,
@@ -1766,7 +2219,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xDD,
@@ -1774,7 +2229,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xDE,
@@ -1782,7 +2239,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xDF,
@@ -1790,7 +2249,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xE0,
@@ -1798,7 +2259,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xE1,
@@ -1806,7 +2269,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xE2,
@@ -1814,7 +2279,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xE3,
@@ -1822,7 +2289,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xE4,
@@ -1830,7 +2299,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xE5,
@@ -1838,7 +2309,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xE6,
@@ -1846,7 +2319,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xE7,
@@ -1854,7 +2329,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xE8,
@@ -1862,7 +2339,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xE9,
@@ -1870,7 +2349,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xEA,
@@ -1878,7 +2359,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xEB,
@@ -1886,7 +2369,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xEC,
@@ -1894,7 +2379,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xED,
@@ -1902,7 +2389,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xEE,
@@ -1910,7 +2399,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xEF,
@@ -1918,7 +2409,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xF0,
@@ -1926,7 +2419,9 @@ module.exports = [
     inputs: ['value', 'offset', 'length'],
     outputs: ['addr'],
     expression: 'addr = new memory[offset:offset+length].value(value)',
-    notes: 'creates a child contract'
+    notes: 'creates a child contract',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xF1,
@@ -1934,7 +2429,10 @@ module.exports = [
     inputs: ['gas', 'addr', 'value', 'argsOffset', 'argsLength', 'retOffset', 'retLength'],
     outputs: ['success'],
     expression: 'success, memory[retOffset:retOffset+retLength] = address(addr).call.gas(gas).value(value) (memory[argsOffset:argsOffset+argsLength])',
-    notes: 'calls a method in another contract'
+    notes: 'calls a method in another contract',
+    readsMemory: [3, 4],
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xF2,
@@ -1942,7 +2440,10 @@ module.exports = [
     inputs: ['gas', 'addr', 'value', 'argsOffset', 'argsLength', 'retOffset', 'retLength'],
     outputs: ['success'],
     expression: 'success, memory[retOffset:retOffset+retLength] = address(addr).callcode.gas(gas).value(value) (memory[argsOffset:argsOffset+argsLength])',
-    notes: '???'
+    notes: '???',
+    readsMemory: [3, 4],
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xF3,
@@ -1950,7 +2451,10 @@ module.exports = [
     inputs: ['offset', 'length'],
     outputs: [],
     expression: 'return memory[offset:offset+length]',
-    notes: 'returns from this contract call'
+    notes: 'returns from this contract call',
+    readsMemory: [0, 1],
+    byteLength: 1,
+    terminal: true
   },
   {
     opcode: 0xF4,
@@ -1958,7 +2462,10 @@ module.exports = [
     inputs: ['gas', 'addr', 'argsOffset', 'argsLength', 'retOffset', 'retLength'],
     outputs: ['success'],
     expression: 'success, memory[retOffset:retOffset+retLength] = address(addr).delegatecall.gas(gas) (memory[argsOffset:argsOffset+argsLength])',
-    notes: 'calls a method in another contract, using the storage of the current contract'
+    notes: 'calls a method in another contract, using the storage of the current contract',
+    readsMemory: [2, 3],
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xF5,
@@ -1967,6 +2474,8 @@ module.exports = [
     outputs: ['addr'],
     expression: 'addr = new memory[offset:offset+length].value(value)',
     notes: 'creates a child contract with a deterministic address, see EIP-1014',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xF6,
@@ -1974,7 +2483,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xF7,
@@ -1982,7 +2493,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xF8,
@@ -1990,7 +2503,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xF9,
@@ -1998,7 +2513,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xFA,
@@ -2007,6 +2524,9 @@ module.exports = [
     outputs: ['success'],
     expression: 'success, memory[retOffset:retOffset+retLength] = address(addr).staticcall.gas(gas) (memory[argsOffset:argsOffset+argsLength])',
     notes: 'calls a method in another contract with state changes such as contract creation, event emission, storage modification and contract destruction disallowed, see EIP-214',
+    readsMemory: [2, 3],
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xFB,
@@ -2014,7 +2534,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xFC,
@@ -2022,7 +2544,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xFD,
@@ -2030,7 +2554,10 @@ module.exports = [
     inputs: ['offset', 'length'],
     outputs: [],
     expression: 'revert(memory[offset:offset+length])',
-    notes: 'reverts with return data'
+    notes: 'reverts with return data',
+    readsMemory: [0, 1],
+    byteLength: 1,
+    terminal: true
   },
   {
     opcode: 0xFE,
@@ -2038,7 +2565,9 @@ module.exports = [
     inputs: [],
     outputs: [],
     expression: '',
-    notes: ''
+    notes: '',
+    byteLength: 1,
+    terminal: false
   },
   {
     opcode: 0xFF,
@@ -2046,6 +2575,8 @@ module.exports = [
     inputs: ['addr'],
     outputs: [],
     expression: 'selfdestruct(address(addr))',
-    notes: 'destroys the contract and sends all funds to addr.'
+    notes: 'destroys the contract and sends all funds to addr.',
+    byteLength: 1,
+    terminal: true
   }
 ]
