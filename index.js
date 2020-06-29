@@ -705,23 +705,23 @@ module.exports = [
   },
   {
     opcode: 0x46,
-    mnemonic: 'Unassigned',
+    mnemonic: 'CHAINID',
     inputs: [],
-    outputs: [],
-    expression: '',
-    notes: '',
+    outputs: ['chainid'],
+    expression: 'chainid',
+    notes: 'ID of the executing chain',
     byteLength: 1,
     terminal: true
   },
   {
     opcode: 0x47,
-    mnemonic: 'Unassigned',
+    mnemonic: 'SELFBALANCE',
     inputs: [],
-    outputs: [],
-    expression: '',
-    notes: '',
+    outputs: ['address(this).balance'],
+    expression: 'address(this).balance',
+    notes: 'address balance of current contract in wei',
     byteLength: 1,
-    terminal: true
+    terminal: false
   },
   {
     opcode: 0x48,
